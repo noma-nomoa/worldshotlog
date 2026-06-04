@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="WorldShot Logは、VRChatスクリーンショットを整理し、見返し、投稿しやすく整えるWindows向けアプリです。"
+    />
+    <title>WorldShot Log - VRChat Screenshot Manager</title>
+    <link rel="icon" href="assets/img/logo.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <span class="bg-orb is-pink"></span>
+      <span class="bg-orb is-blue"></span>
+      <span class="bg-orb is-purple"></span>
+      <span class="bg-grid"></span>
+      <span class="bg-doodle is-star parallax-slow" data-parallax="0.018">+</span>
+      <span class="bg-doodle is-dot parallax-medium" data-parallax="-0.022"></span>
+      <span class="bg-doodle is-tape parallax-fast" data-parallax="0.032"></span>
+      <span class="bg-doodle is-wave parallax-slow" data-parallax="-0.014">~~~</span>
+      <span class="bg-doodle is-ring parallax-medium" data-parallax="0.028"></span>
+      <span class="bg-doodle is-plus parallax-fast" data-parallax="-0.034">+</span>
+      <span class="bg-doodle is-chip parallax-slow" data-parallax="0.024"></span>
+      <span class="bg-doodle is-ribbon parallax-medium" data-parallax="-0.03"></span>
+      <span class="bg-doodle is-wave-two parallax-fast" data-parallax="0.038">~~~</span>
+    </div>
+
+    <header class="site-header" data-site-header>
+      <a class="site-brand" href="#top" aria-label="WorldShot Log トップへ">
+        <img src="assets/img/logo.png" alt="" />
+        <span>WorldShot Log</span>
+      </a>
+
+      <nav class="site-nav" aria-label="ページ内ナビゲーション">
+        <a href="#features">機能</a>
+        <a href="#flow">使い方</a>
+        <a href="#faq">よくある質問</a>
+      </nav>
+
+      <div class="site-header-actions">
+        <a class="header-download" href="https://github.com/noma-nomoa/vrchat-world-photo-manager/releases">
+          ダウンロード
+        </a>
+        <a class="header-booth" href="https://noooma.booth.pm/items/8109621">Boothで見る</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-kicker reveal hero-step">VRChat Screenshot Manager for Windows</p>
+            <h1 class="hero-title reveal hero-step">
+              <span>WorldShot</span>
+              <span>Log</span>
+            </h1>
+            <p class="hero-subtitle reveal hero-step">
+              あのワールドの一枚に、すぐ戻れる。
+            </p>
+            <p class="hero-lead reveal hero-step">
+              VRChatで撮った写真を、整理から加工まで、ひとつのアプリで。<br />
+              見返したい写真にすぐ出会える体験を。
+            </p>
+            <div class="hero-actions reveal hero-step">
+              <a class="primary-cta" href="https://github.com/noma-nomoa/vrchat-world-photo-manager/releases">
+                <span class="cta-mark" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M5 20h14v-2H5v2Zm14-9h-4V3H9v8H5l7 7 7-7Z" />
+                  </svg>
+                </span>
+                ダウンロード
+              </a>
+              <a class="secondary-cta" href="https://noooma.booth.pm/items/8109621">
+                <img
+                  class="cta-icon"
+                  src="img/booth_logo_icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                Boothで見る
+              </a>
+            </div>
+            <div class="hero-links reveal hero-step">
+              <a href="https://github.com/noma-nomoa/vrchat-world-photo-manager">GitHubを見る</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="WorldShot Logの画面イメージ">
+            <div class="paper-tape is-hero-tape" aria-hidden="true"></div>
+
+            <article
+              class="hero-photo-card is-back hero-collage-card"
+              data-parallax="-0.014"
+              style="--rotate: -10deg"
+            >
+              <img src="img/app_view/sub01.png" alt="" />
+              <p>Editing Preview</p>
+            </article>
+            <article
+              class="hero-photo-card is-side hero-collage-card"
+              data-parallax="0.018"
+              style="--rotate: 8deg"
+            >
+              <img src="img/app_view/sub02.png" alt="" />
+              <p>World Detail</p>
+            </article>
+            <article
+              class="hero-photo-card is-bottom hero-collage-card"
+              data-parallax="0.026"
+              style="--rotate: -6deg"
+            >
+              <img src="img/app_view/sub03.png" alt="" />
+              <p>Light Gallery</p>
+            </article>
+
+            <div class="app-mock reveal hero-step">
+              <div class="mock-window-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <strong>WorldShot Log</strong>
+              </div>
+              <img
+                class="app-mock-image"
+                src="img/app_view/main.png"
+                alt="WorldShot Logの写真一覧画面"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section-band" id="problem">
+        <p class="section-bg-word" data-parallax="-0.018" aria-hidden="true">PROBLEM</p>
+        <div class="section-heading reveal">
+          <p class="section-kicker">Problem</p>
+          <h2>今日もいい写真を撮れた！でも…</h2>
+        </div>
+
+        <div class="problem-grid">
+          <article class="mini-card reveal">
+            <span class="line-icon icon-search"></span>
+            <h3>探すのが大変</h3>
+            <p>気づけばフォルダが写真でいっぱいに。</p>
+          </article>
+          <article class="mini-card reveal">
+            <span class="line-icon icon-question"></span>
+            <h3>撮影したワールドを忘れた</h3>
+            <p>どこで撮ったのか思い出せなくなる。</p>
+          </article>
+          <article class="mini-card reveal">
+            <span class="line-icon icon-sliders"></span>
+            <h3>レタッチが面倒</h3>
+            <p>明るさ調整やトリミング、切り抜きなどの加工が毎回手間に。</p>
+          </article>
+          <article class="mini-card reveal">
+            <span class="line-icon icon-mask"></span>
+            <h3>モザイクが面倒</h3>
+            <p>ユーザー名やUIを隠すのが大変。</p>
+          </article>
+          <article class="mini-card reveal">
+            <span class="line-icon icon-vr"></span>
+            <h3>VR中に見たい</h3>
+            <p>VRゴーグルを被りながら探すのが大変。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="flow section-band" id="flow">
+        <p class="section-bg-word" data-parallax="-0.02" aria-hidden="true">FLOW</p>
+        <div class="split-heading reveal">
+          <p class="section-kicker">Solution</p>
+          <h2>
+            整理、確認、編集、保存。<br />
+            <span class="no-wrap-pc">投稿までの流れをひとつに。</span>
+          </h2>
+        </div>
+
+        <div class="flow-steps reveal">
+          <article>
+            <span>01</span>
+            <h3>見つける</h3>
+            <p>日付やワールドで素早く検索。見たい写真や行きたいワールドにすぐアクセス。</p>
+          </article>
+          <div class="flow-arrow" aria-hidden="true">›</div>
+          <article>
+            <span>02</span>
+            <h3>整える</h3>
+            <p>お気に入りやメモ、タグ付けで管理。検索やソート機能も。</p>
+          </article>
+          <div class="flow-arrow" aria-hidden="true">›</div>
+          <article>
+            <span>03</span>
+            <h3>残す・投稿する</h3>
+            <p>撮影した写真を加工して、SNS投稿用に保存＆管理。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features section-band" id="features">
+        <p class="section-bg-word" data-parallax="-0.018" aria-hidden="true">FEATURES</p>
+        <div class="section-heading reveal">
+          <p class="section-kicker">Features</p>
+          <h2 class="no-wrap-pc">WorldShot Logの主な機能</h2>
+          <p>VRChatで撮った大量のスクリーンショットを、快適に扱うための機能をそろえました。</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">CAL</span>
+            <h3>日付・ワールド別整理</h3>
+            <p>一覧で分かりやすく表示。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">###</span>
+            <h3>大量写真でも快適</h3>
+            <p>段階表示と絞り込みで大量の写真に対応。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">IMG</span>
+            <h3>写真詳細モーダル</h3>
+            <p>大きく見ながらタグやメモを確認。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">WRLD</span>
+            <h3>ワールド情報管理</h3>
+            <p>WorldのURLを開くことも可能。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">MEMO</span>
+            <h3>メモ機能</h3>
+            <p>気づいたことや撮影情報のメモを残せる。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">EDIT</span>
+            <h3>アプリ内画像編集</h3>
+            <p>レタッチやトリミングをアプリ上で完結。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">SAFE</span>
+            <h3>目隠し加工</h3>
+            <p>ぼかしや塗りつぶしで写り込みをケア。</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">POST</span>
+            <h3>トリミング</h3>
+            <p>SNSやVRChatの絵文字やサムネイル向けのトリミングが可能。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="designed section-band" id="designed">
+        <p class="section-bg-word" data-parallax="-0.016" aria-hidden="true">DESIGNED FOR VRC USERS</p>
+        <div class="designed-grid">
+          <div class="designed-copy reveal">
+            <p class="section-kicker">Designed for VRC Users</p>
+            <h2>VRゴーグルを被りながらでも簡単操作。見やすく押しやすい。</h2>
+            <p>
+              WorldShot Logは、Windows上で動作するアプリです。VRChatで撮った写真を、
+              VRゴーグルを被ったままでも快適に利用できるよう設計されています。
+              デスクトップではキーボードでの操作も可能です。
+            </p>
+            <div class="designed-points">
+              <span>Windowsアプリ</span>
+              <span>VR中でも簡単操作</span>
+              <span>大きく見やすいUI</span>
+              <span>キーボードで楽々操作</span>
+            </div>
+          </div>
+
+          <div class="desk-mock reveal" aria-label="デスクトップ環境のイメージ">
+            <div class="desk-screen">
+              <div class="desk-toolbar"></div>
+              <div class="desk-content">
+                <div class="desk-side"></div>
+                <div class="desk-photos">
+                  <span class="thumb-world is-dusk"></span>
+                  <span class="thumb-world is-blue"></span>
+                  <span class="thumb-world is-room"></span>
+                  <span class="thumb-world is-sky"></span>
+                </div>
+              </div>
+            </div>
+            <div class="desk-vr" aria-hidden="true"></div>
+            <div class="desk-card is-one hero-collage-card" data-parallax="0.02" style="--rotate: 7deg">
+              <div class="thumb-world is-night"></div>
+            </div>
+            <div class="desk-card is-two hero-collage-card" data-parallax="-0.018" style="--rotate: -8deg">
+              <div class="thumb-world is-dusk"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="editing section-band" id="editing">
+        <p class="section-bg-word" data-parallax="-0.018" aria-hidden="true">EDITING TOOLS</p>
+        <div class="tool-heading reveal">
+          <p class="section-kicker">Editing Tools</p>
+          <h2>
+            <span class="no-wrap-pc">レタッチなどの加工をしたい。</span><br />
+            でも、簡単に。
+          </h2>
+        </div>
+        <div class="editing-showcase reveal">
+          <figure class="editing-image-card">
+            <img
+              src="img/editingtools/edit01.png"
+              alt="WorldShot Logの画像編集画面"
+            />
+          </figure>
+          <div class="tool-strip" role="list" aria-label="画像編集ツール一覧">
+            <span role="listitem">基本補正</span>
+            <span role="listitem">スマート自動補正</span>
+            <span role="listitem">トーンカーブ</span>
+            <span role="listitem">プリセット</span>
+            <span role="listitem">トリミング</span>
+            <span role="listitem">ぼかし</span>
+            <span role="listitem">目隠し加工</span>
+            <span role="listitem">テキスト追加</span>
+            <span role="listitem">Undo / Redo</span>
+            <span role="listitem">比較表示</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="safe section-band">
+        <p class="section-bg-word" data-parallax="-0.014" aria-hidden="true">SAFE & STORAGE</p>
+        <div class="safe-grid">
+          <div class="safe-copy reveal">
+            <p class="section-kicker">Safe & Non-destructive</p>
+            <h2>
+              元画像は、そのまま残す。<br />
+              投稿用だけを別名保存。
+            </h2>
+          </div>
+          <div class="safe-cards">
+            <article class="safe-card reveal">
+              <span>01</span>
+              <h3>元画像を上書きしない</h3>
+              <p>いつでも元の状態に戻れる安心の仕組み。</p>
+            </article>
+            <article class="safe-card reveal">
+              <span>02</span>
+              <h3>加工後は別名保存</h3>
+              <p>編集した写真は別ファイルとして保存できます。</p>
+            </article>
+            <article class="safe-card reveal">
+              <span>03</span>
+              <h3>さまざまな用途に活用</h3>
+              <p>X投稿、Booth掲載、サムネイルなど自由に使えます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="use-cases section-band" id="use-cases">
+        <p class="section-bg-word" data-parallax="-0.018" aria-hidden="true">USE CASES</p>
+        <div class="section-heading reveal">
+          <p class="section-kicker">Use Cases</p>
+          <h2 class="no-wrap-pc">いろいろなシーンで活躍します。</h2>
+        </div>
+
+        <div class="case-row reveal">
+          <article>
+            <img src="img/usecase/x_post.png" alt="" />
+            <h3>X投稿</h3>
+            <p>お気に入りの1枚をもっと可愛くレタッチをして。</p>
+          </article>
+          <article id="booth">
+            <img class="case-logo-image" src="img/usecase/booth.svg" alt="" />
+            <h3>Booth掲載</h3>
+            <p>商品イメージ用の素材を整える。</p>
+          </article>
+          <article>
+            <img src="img/usecase/world.png" alt="" />
+            <h3>ワールド巡りの記録</h3>
+            <p>行ったワールドの思い出を残す。</p>
+          </article>
+          <article>
+            <img src="img/usecase/emoji.png" alt="" />
+            <h3>絵文字・ステッカー素材作成</h3>
+            <p>かわいい切り抜きも手軽に作成。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq section-band" id="faq">
+        <p class="section-bg-word" data-parallax="-0.016" aria-hidden="true">FAQ</p>
+        <div class="faq-grid">
+          <div class="faq-title reveal">
+            <p class="section-kicker">FAQ</p>
+            <h2>よくある質問</h2>
+          </div>
+
+          <div class="faq-list reveal">
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                どのOSに対応していますか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Windows向けのElectronアプリとして配布しています。</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                VRChat内で動くアプリですか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>いいえ。VRChat内やQuest単体で動作するアプリではなく、Windowsのデスクトップ上で使うアプリです。</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                元画像は上書きされますか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>上書きしません。編集後の画像は投稿用の別ファイルとして保存できます。</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                どのような画像形式に保存できますか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>PNG、JPEG、WebPでの書き出しに対応しています。</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                自動アップデートには対応していますか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  はい。アプリ起動時に新しいバージョンがあるかを確認し、
+                  アップデートがある場合はアプリ上にお知らせを表示します。
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                昔に撮影した写真も読み込めますか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  条件を満たしていれば読み込めます。目安として、2025年8月27日以降に撮影され、
+                  VRChat側でメタデータ保存が有効になっている写真であれば、
+                  ワールド情報を取得できる可能性があります。
+                </p>
+                <p>
+                  メタデータがない写真は、撮影ワールドなどを自動取得できない場合がありますが、
+                  写真自体の取り込み・整理には利用できます。
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                アンインストールはどうすればよいですか？
+                <span>+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  アプリ内からアンインストールできます。また、必要に応じて
+                  データベースや設定ファイルなどを個別に削除することもできます。
+                </p>
+                <p>
+                  WorldShot Logは元画像を直接上書きしないため、アンインストールしても
+                  元の写真ファイルが勝手に削除されることはありません。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section-band" id="download">
+        <div class="final-cta-box reveal">
+          <h2>撮った写真が、ちゃんと思い出になる。</h2>
+          <p>
+            VRChatで撮った写真を、見つけやすく、整えやすく、残しやすく。<br />
+            WorldShot Logで、写真の整理から投稿準備まで、ひとつにつなげよう。
+          </p>
+          <div class="final-actions">
+            <a href="https://github.com/noma-nomoa/vrchat-world-photo-manager/releases">ダウンロード</a>
+            <a href="https://noooma.booth.pm/items/8109621">Boothで見る</a>
+            <a href="https://github.com/noma-nomoa/vrchat-world-photo-manager">GitHubを見る</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/img/banner.png" alt="WorldShot Log" />
+        <p>VRChatスクリーンショットを、整理から投稿準備まで。</p>
+      </div>
+      <a href="https://github.com/noma-nomoa/vrchat-world-photo-manager">GitHub repository</a>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
