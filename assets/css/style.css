@@ -904,6 +904,10 @@ input {
   margin-bottom: 34px;
 }
 
+.problem .section-heading {
+  max-width: 640px;
+}
+
 .section-heading h2,
 .split-heading h2,
 .tool-heading h2,
