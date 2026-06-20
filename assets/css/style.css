@@ -1451,7 +1451,7 @@ input {
 
 .safe-cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -1815,6 +1815,10 @@ body.is-ready .hero-step:nth-child(6) {
 
   .tool-strip {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .safe-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .case-row {
